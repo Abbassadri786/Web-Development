@@ -10,35 +10,38 @@
 <body>
     <div id="container">
         <h1>Tip Calculator</h1>
-    
-    <div id="calculator">
-
-        <form>
-            <p><strong>How much was your bill?</strong></p>
-            <p>Amount (Rs):<input id="billamt" type="text" required placeholder="Bill Amount"></p>
-            <p><strong>How was your service?</strong> </p>
-            <select id="serviceQua1">
-
-                <option value="">-- Choose an option --</option>
-                <option value="0.15">15&#37; &#45; Outstanding</option>
-                <option value="0.10">10&#37; &#45; Good</option>
-                <option value="0.05">5&#37; &#45; It was OK</option>
-
-            </select>
-        </form>
-        
-            <p><strong>How many people are sharing the bill?</strong></p>
-            <input id="peopleamt" type="text" placeholder="Number of people">people
-            <button type="button" id="calculate">Calculate</button>
-        
-    </div>
-    
-    <!--Calculator end-->
-    <div id="totaltip">
-        <sup>Rs.</sup><span id="tip">0.00</span>
-        <small id="each">each</small>
-    </div>
-    <!--totalTip end-->
+        <div id="calculator">
+      
+      
+          <form>
+            <p><strong>How much was your bill?</strong>
+              <p>
+                Rs. <input id="billamt" type="text" placeholder="Bill Amount">
+      
+                <p><strong>How was your service?</strong> 
+                  <p>
+                    <select id="serviceQual">
+                  <option disabled selected value="0">-- Choose an Option --</option>
+                  <option value="0.3">30&#37; &#45; Outstanding</option>
+                  <option value="0.2">20&#37; &#45; Good</option>
+                  <option value="0.15">15&#37; &#45; It was OK</option>
+                  <option value="0.1">10&#37; &#45; Bad</option>
+                  <option value="0.05">5&#37; &#45; Terrible</option>
+              </select>
+      
+          </form>
+          <p><strong>How many people are sharing the bill?</strong> </p>
+          <input id="peopleamt" type="text" placeholder="Number of People"> people
+          <button type="button" id="calculate">Calculate!</button>
+      
+        </div>
+        <!--calculator end-->
+        <div id="totalTip">
+          <sup>Rs.</sup><span id="tip">0.00</span>
+          <small id="each">each</small>
+        </div>
+        <!--totalTip end-->
+      
 </div>
     <script type="text/javascript" src="tipscript.js"></script>
 </body>
