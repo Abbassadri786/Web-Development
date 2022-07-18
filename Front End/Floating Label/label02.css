@@ -1,0 +1,16 @@
+.text-input:focus{
+    border: 2px solid #7e4ccb;
+}
+.text-input:focus + .label, .filled{
+    top: -10px;
+    color: #7e4ccb;
+    font-size: 14px;
+}
+.text-input::placeholder{
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.text-input:focus::placeholder{
+    opacity: 1;
+}
