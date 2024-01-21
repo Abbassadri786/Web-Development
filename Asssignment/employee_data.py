@@ -1,9 +1,9 @@
 import pandas as pd
 from datetime import datetime, timedelta
 
-def analyze_employee_data(file_path):
+def analyze_employee_data("C:\Users\abbas\Downloads\Assignment\Assignment_Timecard.xlsx"):
     # Read the CSV file into a pandas DataFrame
-    df = pd.read_csv(file_path)
+    df = pd.read_csv("C:\Users\abbas\Downloads\Assignment\Assignment_Timecard.xlsx")
 
     # Convert the 'Time' and 'Time Out' columns to datetime objects
     df['Time'] = pd.to_datetime(df['Time'])
@@ -56,5 +56,5 @@ def analyze_employee_data(file_path):
         print(employee)
 
 # Assuming the input file is a CSV file with the specified columns
-file_path = 'path/to/your/input/file.csv'
+file_path = '"C:\Users\abbas\Downloads\Assignment\Assignment_Timecard.xlsx"'
 analyze_employee_data(file_path)
